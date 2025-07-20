@@ -2,6 +2,7 @@
 一鍵下載 YouTube mp3，檔案直接存到桌面、自動命名、過程無多餘資料夾。
 
 技術棧： PowerShell, yt-dlp, FFmpeg
+輸入 .\ffmpeg.ps1 執行，開始下載
 
 ## ✨ 功能特色
 - 下載最佳音質音訊（.webm 或 .m4a）

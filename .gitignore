@@ -1,0 +1,7 @@
+# 忽略 Python 虛擬環境
+venv/
+
+# 忽略其他暫存檔案
+__pycache__/
+*.pyc
+*.log

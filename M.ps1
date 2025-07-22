@@ -23,10 +23,12 @@ if ($latestFile) {
     # 使用 ffmpeg 轉換為 mp3 格式
     $outputFile = "$desktop\$($latestFile.BaseName).mp3"
     # 這裡的 ffmpeg 命令對於 .m4a 和 .webm 轉換為 .mp3 都是適用的
-    ffmpeg -i $latestFile.FullName -vn -ar 44100 -ac 2 -b:a 128k $outputFile
+    # ffmpeg -i $latestFile.FullName -vn -ar 44100 -ac 2 -b:a 128k $outputFile
+    ffmpeg -i "`"$($latestFile.FullName)`"" -vn -ar 44100 -ac 2 -b:a 128k "`"$outputFile`""
 
     # 刪除原始的 .webm 或 .m4a 檔案（可選）
-    Remove-Item $latestFile.FullName
+    # Remove-Item $latestFile.FullName
+    Remove-Item -LiteralPath $latestFile.FullName
     Write-Host "Conversion complete: $outputFile"
 }
 else {

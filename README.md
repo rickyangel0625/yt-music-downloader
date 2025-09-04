@@ -5,7 +5,7 @@
 
 - 輸入 .\M.ps1 執行，開始下載
 - 輸入 .\XXL.ps1 執行，開始下載(附加詢問聲音是否加大)
-- 更直觀使用: YouTube Music Download Assistant-2.bat ，遵從指示，實現下載。
+- 更直觀使用: secretary.bat ，遵從指示，實現下載。
 
 ## ✨ 功能特色
 - 下載最佳音質音訊（.webm 或 .m4a）
